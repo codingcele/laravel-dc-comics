@@ -8,7 +8,8 @@
                 <a href="{{ route('person.show', $person) }}">
                     {{ $person -> firstName }} {{ $person -> lastName }}
                 </a>
-                
+                ---
+                <a href="{{ route('person.delete', $person) }}">DELETE</a>
             </li>
         @endforeach
     </ul>
